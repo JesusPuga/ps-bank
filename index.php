@@ -36,6 +36,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
+<?php
+	echo "hello world"
+?>
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
@@ -45,7 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner">
 		<div class="header">
 			<div class="container">
-				<div class="header-left">
+						<div class="header-left">
 					<div class="w3layouts-logo">
 						<h1>
 							<a href="index.html">SP Bank</a>
