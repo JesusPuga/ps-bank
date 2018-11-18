@@ -37,7 +37,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <?php
-	echo "hello world"
+	echo "hello world";
+	$dbconn = pg_connect("dbname=spbank user=puga password=1791332");
+
+	if(!$dbconn) {
+		echo "Error : Unable to open database\n";
+ } else {
+		echo "Opened database successfully\n";
+ }
 ?>
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
