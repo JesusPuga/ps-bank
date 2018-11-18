@@ -34,7 +34,8 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
-        dd($exception->getMessage());
+        //show the messafe errors, use it to check 500 error on proudction
+        //dd($exception->getMessage());
         parent::report($exception);
     }
 
