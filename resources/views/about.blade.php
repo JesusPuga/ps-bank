@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>Finance In a Banking Category Bootstrap Responsive Website Template | About :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta name="keywords" content="Finance In Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Finance In Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
@@ -20,7 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <!--// css -->
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="fonts/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome icons -->
 <!-- font -->
 <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -30,12 +30,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-</script> 
+</script>
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
@@ -80,10 +80,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li><a href="contact.html">Contact</a></li>
-								</ul>	
+								</ul>
 								<div class="clearfix"> </div>
-							</div>	
-						</nav>		
+							</div>
+						</nav>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //banner -->
 	<!-- about -->
 	<!-- w3l-about -->
-	<div class="w3l-about"> 
+	<div class="w3l-about">
 		<div class="container">
 			<div class="agile-about-grids">
 				<div class="col-md-6 w3labout-left">
@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 					</div>
-				</div> 
+				</div>
 				<div class="col-md-6 w3labout-right">
 					<h5>Who we are</h5>
 					<h4>Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software</h4>
@@ -176,11 +176,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Nunc et massa ut purus porta euismod quis eu erat. Nam ornare faucibus elit sed tempor. Quisque iaculis odio nibh, et auctor tellus rhoncus vel.</p>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</div>
 	</div>
 	<!-- //choose -->
-	
+
 	<!-- team -->
 	<div class="team">
 			<div class="container">
@@ -246,7 +246,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 	</div>
 	<!-- //team -->
-	<!-- //about --> 
+	<!-- //about -->
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -263,7 +263,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-	<!-- //footer -->	
+	<!-- //footer -->
 	<script src="js/jarallax.js"></script>
 	<script src="js/SmoothScroll.min.js"></script>
 	<script type="text/javascript">
@@ -285,14 +285,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+
 			});
 	</script>
 	<!-- //here ends scrolling icon -->
-</body>	
+</body>
 </html>
