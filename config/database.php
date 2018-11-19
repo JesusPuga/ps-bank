@@ -73,7 +73,7 @@ return [
 
         'pgsql_prod' => [
             'driver' => 'pgsql',
-            'host' => $host,
+            'host' =>  $url["host"],
             'database' => substr($url["path"], 1),
             'username' => $url["user"],
             'password' =>  $url["pass"],
