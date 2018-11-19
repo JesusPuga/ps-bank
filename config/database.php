@@ -1,5 +1,6 @@
 <?php
 $url = parse_url(getenv("DATABASE_URL"));
+$database = substr($url["path"], 1);
 
 return [
 
@@ -74,7 +75,7 @@ return [
         'pgsql_prod' => [
             'driver' => 'pgsql',
             'host' =>  $url["host"],
-            'database' => substr($url["path"], 1),
+            'database' => $database,
             'username' => $url["user"],
             'password' =>  $url["pass"],
             'charset' => 'utf8',
