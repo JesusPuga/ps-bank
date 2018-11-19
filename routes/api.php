@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/payment',function(){
+     return response()->json([
+                'status' => 'success',
+                'ref_code' => '123456'
+            ]);
+
+});
