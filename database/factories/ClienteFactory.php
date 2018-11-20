@@ -9,6 +9,6 @@ $factory->define(App\Cliente::class, function (Faker $faker) {
         'cuenta_id' => rand(1,30),
         'slug' => $cuenta,
         'cuenta' => str_slug($cuenta),
-        'telefono' = $faker->text(16),      
+        'telefono' => $faker->text(16),      
     ];
 });
