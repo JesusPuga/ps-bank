@@ -15,6 +15,7 @@ class CreateCuentasTable extends Migration
     {
         Schema::create('cuentas', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('cliente_id')->unsigned();
             $table->string('slug',128)->unique();
             $table->float('saldo');
             $table->datetime('fecha_apertura');
@@ -22,6 +23,12 @@ class CreateCuentasTable extends Migration
             $table->float('credito');
             $table->float('debito');
             $table->timestamps();
+
+
+            //relation
+            $table->foreign('cliente_id')->references('id')->on('clientes')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
         });
     }
 

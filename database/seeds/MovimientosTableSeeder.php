@@ -11,9 +11,6 @@ class MovimientosTableSeeder extends Seeder
      */
     public function run()
     {
-      factory(App\Movimiento::class,20)->create().each(function(App\Movimiento $movimiento){
-        $movimiento->cliente()->attach(ran(1,30));
-      });
-  }
+      factory(App\Movimiento::class,20)->create();
     }
 }
