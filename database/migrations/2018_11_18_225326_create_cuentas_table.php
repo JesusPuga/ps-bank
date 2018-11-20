@@ -15,6 +15,12 @@ class CreateCuentasTable extends Migration
     {
         Schema::create('cuentas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('slug',128)->unique();
+            $table->float('saldo');
+            $table->datetime('fecha_apertura');
+            $table->dateTime('fecha_cierre');
+            $table->float('credito');
+            $table->float('debito');
             $table->timestamps();
         });
     }

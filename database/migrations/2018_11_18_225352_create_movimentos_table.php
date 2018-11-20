@@ -13,9 +13,20 @@ class CreateMovimentosTable extends Migration
      */
     public function up()
     {
-        Schema::create('movimentos', function (Blueprint $table) {
+        Schema::create('movimientos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('slug',128)->unique();
+            $table->integer('cliente_id')->unsigned();
+            $table->integer('cliente_destino_id')->unsigned();
+            $table->float('monto');
+            $table->dateTime('fecha');
+            $table->string('referencia',128);
+            $table->boolean('status');
             $table->timestamps();
+
+            $table->foreign('cliente_id')->references('id')->on('clientes')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
         });
     }
 
@@ -26,6 +37,6 @@ class CreateMovimentosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('movimentos');
+        Schema::dropIfExists('moivimentos');
     }
 }
