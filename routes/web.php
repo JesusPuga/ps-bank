@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+Route::redirect('/', 'movimientos');
+
+Auth::routes();
+
+Route::get('home', 'HomeController@index')->name('movimientos');
+Route::get('movimientos', 'Web\MovimientoController@index')->name('movimientos');
