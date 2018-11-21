@@ -11,9 +11,13 @@
 |
 */
 
-Route::redirect('/', 'movimientos');
+Route::redirect('/', 'inicio');
 
 Auth::routes();
 
+//web
+Route::get('inicio', 'PublicController@initial')->name('initial');
 Route::get('home', 'HomeController@index')->name('movimientos');
 Route::get('movimientos', 'Web\MovimientoController@index')->name('movimientos');
+
+//admin

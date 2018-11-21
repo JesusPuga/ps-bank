@@ -9,13 +9,24 @@ use App\Http\Controllers\Controller;
 class MovimientoController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('web.movimientos');
+        $movimientos = Movimiento::orderBy('id','DESC')->paginate(3);
+        return view('web.movimientos', compact('movimientos'));
     }
 
     /**
