@@ -29,6 +29,21 @@ class MovimientoController extends Controller
         return view('web.movimientos', compact('movimientos'));
     }
 
+        /**
+         * Display a listing of the resource.
+         *
+         * @return \Illuminate\Http\Response
+         */
+        public function usuarioMovimientos()
+        {
+            $userId = Auth::id();
+            if($userId==null){
+                $userId = 1;
+            }
+            $movimientos = Movimiento::orderBy('id','DESC')->where('cuenta_id',$userId)->paginate(3);
+
+            return view('web.movimientos', compact('movimientos'));
+        }
     /**
      * Show the form for creating a new resource.
      *

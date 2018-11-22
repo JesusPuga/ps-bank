@@ -20,4 +20,5 @@ Route::get('inicio', 'PublicController@initial')->name('initial');
 Route::get('home', 'HomeController@index')->name('movimientos');
 Route::get('movimientos', 'Web\MovimientoController@index')->name('movimientos');
 
+Route::get('usuario/movimientos', 'Web\MovimientoController@usuarioMovimientos')->name('usuarioMovimientos');
 //admin
