@@ -16,7 +16,6 @@ class CreateCuentasTable extends Migration
         Schema::create('cuentas', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('cliente_id')->unsigned();
-            $table->string('cuenta_code')->unique();;
             $table->string('slug',128)->unique();
             $table->float('saldo');
             $table->datetime('fecha_apertura');

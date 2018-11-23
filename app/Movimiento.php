@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Movimiento extends Model
 {
   protected $fillable = [
-      'slug', 'cliente_id', 'cliente_destino_id', 'monto', 'fecha', 'referencia', 'status', 
+      'slug', 'cuenta_id', 'cuenta_destino_id', 'monto', 'fecha', 'referencia', 'status',
   ];
 
-  public function cliente(){
-    return $this->belongsTo('App\Cliente');
+  public function cuenta(){
+    return $this->belongsTo('App\Cuenta');
   }
 }

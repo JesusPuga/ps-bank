@@ -16,8 +16,8 @@ class CreateMovimentosTable extends Migration
         Schema::create('movimientos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('slug',128)->unique();
-            $table->integer('cliente_id')->unsigned();
-            $table->integer('cliente_destino_id')->unsigned();
+            $table->integer('cuenta_id')->unsigned();
+            $table->integer('cuenta_destino_id')->unsigned();
             $table->float('monto');
             $table->string('descripcion');
             $table->dateTime('fecha');
@@ -25,7 +25,7 @@ class CreateMovimentosTable extends Migration
             $table->boolean('status');
             $table->timestamps();
 
-            $table->foreign('cliente_id')->references('id')->on('clientes')
+            $table->foreign('cuenta_id')->references('id')->on('cuentas')
             ->onDelete('cascade')
             ->onUpdate('cascade');
         });
