@@ -25,4 +25,7 @@ Route::post('/payment',function(){
 
 });
 
-Route::get('/usuarioMovimientos', 'Web\MovimientoController@usuarioMovimientos');
+Route::get('/usuarioMovimientos', 'PublicController@usuarioMovimientos');
+
+//Admin
+Route::get('/getClientes', 'PublicController@getClientes');

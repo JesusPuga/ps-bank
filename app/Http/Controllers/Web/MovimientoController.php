@@ -17,7 +17,7 @@ class MovimientoController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -31,18 +31,6 @@ class MovimientoController extends Controller
         return view('web.movimientos', compact('movimientos'));
     }
 
-        /**
-         * Display a listing of the resource.
-         *
-         * @return \Illuminate\Http\Response
-         */
-        public function usuarioMovimientos()
-        {
-            $userId = Auth::id();
-            $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cliente_id',2)->get()->toArray();
-
-            return $movimientos;//new MovimientosResource($movimientos);
-        }
     /**
      * Show the form for creating a new resource.
      *

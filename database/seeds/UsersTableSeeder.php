@@ -14,7 +14,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'admin',
         'email' => 'admin@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::ADMIN_TYPE
       ]);
 
       App\Cliente::create([
@@ -37,7 +38,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'facpya',
         'email' => 'facpya@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -60,7 +62,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'reposteria',
         'email' => 'reposteria@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -83,7 +86,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'timhortons',
         'email' => 'timhortons@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -106,7 +110,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'abastecedora',
         'email' => 'abastecedora@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -129,7 +134,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'molino',
         'email' => 'molino@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -152,7 +158,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'cafeteria',
         'email' => 'cafeteria@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -175,7 +182,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'caketastic',
         'email' => 'caketastic@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -198,7 +206,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'productosav',
         'email' => 'productosav@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([
@@ -221,7 +230,8 @@ class UsersTableSeeder extends Seeder
       App\User::create([
         'name' => 'coffeBreak',
         'email' => 'coffeBreak@email.com',
-        'password' => bcrypt('password')
+        'password' => bcrypt('password'),
+        'type' => App\User::DEFAULT_TYPE
       ]);
 
       App\Cliente::create([

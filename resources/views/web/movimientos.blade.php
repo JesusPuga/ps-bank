@@ -13,15 +13,16 @@
                   <th>Fecha</th>
               </tr>
           </thead>
+          <tfoot>
+						<tr>
+              <th>Id</th>
+              <th>Monto</th>
+              <th>Descripción</th>
+              <th>Fecha</th>
+						</tr>
+					</tfoot>
         </table>
-        @foreach($movimientos as $movimiento)
-      <div class="panel panel-default">
-        <div class="panel-headnig">
-          {{ $movimiento->monto}}
-        </div>
-      </div>
-      @endforeach
     </div>
   </div>
-  <script src="{{ asset('js/movimientosTable.js')}}"></script>
+  <script src="{{ asset('js/movimientosTable.js')}}" defer></script>
 @endsection
