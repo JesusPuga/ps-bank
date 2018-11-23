@@ -7,11 +7,20 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
+    <title>{{ config('app.name', 'SP Bank') }}</title>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- css -->
+    <script src="{{ asset('js/jquery-1.11.1.min.js')}}"></script>
+    <script src="{{ asset('js/bootstrap.js')}}"></script>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <!-- //font -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">

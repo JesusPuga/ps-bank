@@ -24,3 +24,5 @@ Route::post('/payment',function(){
             ]);
 
 });
+
+Route::get('/usuarioMovimientos', 'Web\MovimientoController@usuarioMovimientos');

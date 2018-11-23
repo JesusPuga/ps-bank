@@ -4,7 +4,8 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Cuenta::class, function (Faker $faker) {
     return [
-        'cliente_id' => rand(1,30),
+        'cliente_id' => rand(20,30),
+        'cuenta_code' => $faker->unique()->text(16),
         'saldo' => rand(20000,50000),
         'fecha_apertura' => $faker->date($format = 'Y-m-d', $max = 'now'),
         'fecha_cierre' => $faker->date($format = 'Y-m-d', $max = 'now'),

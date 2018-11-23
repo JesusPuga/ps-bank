@@ -10,6 +10,7 @@ $factory->define(App\Movimiento::class, function (Faker $faker) {
       'monto' => rand(1000,2000),
       'fecha' => $faker->date($format = 'Y-m-d', $max = 'now'),
       'referencia' => $faker->text(128),
+      'descripcion' => $faker->text(128),
       'status' => True,
     ];
 });

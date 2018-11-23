@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Web;
 use App\Movimiento;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\Movimientos as MovimientosResource;
+use Auth;
 
 class MovimientoController extends Controller
 {
@@ -15,7 +17,7 @@ class MovimientoController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -37,12 +39,9 @@ class MovimientoController extends Controller
         public function usuarioMovimientos()
         {
             $userId = Auth::id();
-            if($userId==null){
-                $userId = 1;
-            }
-            $movimientos = Movimiento::orderBy('id','DESC')->where('cuenta_id',$userId)->paginate(3);
+            $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cliente_id',2)->get()->toArray();
 
-            return view('web.movimientos', compact('movimientos'));
+            return $movimientos;//new MovimientosResource($movimientos);
         }
     /**
      * Show the form for creating a new resource.

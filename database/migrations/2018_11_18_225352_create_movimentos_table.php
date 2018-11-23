@@ -19,6 +19,7 @@ class CreateMovimentosTable extends Migration
             $table->integer('cliente_id')->unsigned();
             $table->integer('cliente_destino_id')->unsigned();
             $table->float('monto');
+            $table->string('descripcion');
             $table->dateTime('fecha');
             $table->string('referencia',128);
             $table->boolean('status');
