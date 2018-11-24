@@ -31,8 +31,17 @@ class PublicController extends Controller
     public function movimientos(Request $request)
     {
         $data = Input::all();
-        $cuenta = Cuenta::where("cliente_id","=",$data['id'])->firstOrFail();;
-        $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cuenta_id',$cuenta->codigo_cuenta)->get()->toArray();
+        $cuenta = Cuenta::where("cliente_id","=",$data['id'])->firstOrFail();
+        $user = User::where("id","=",$data['id'])->firstOrFail();
+        $movimientos;
+
+        if($user->isAdmin()){
+          $movimientos = Movimiento::select('id','monto','descripcion','fecha')
+                                   ->where([['cuenta_id',"=",$cuenta->codigo_cuenta],['local',"=",False]])->get()->toArray();
+        }else{
+          $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cuenta_id',$cuenta->codigo_cuenta)->get()->toArray();
+
+        }
         $newMovimientos['movimientos'] =$movimientos;
         $newMovimientos['saldo'] = $cuenta->saldo;
 

@@ -258,15 +258,15 @@ class UsersTableSeeder extends Seeder
       ]);
 
       App\Cliente::create([
-        'slug' => 'coffeBreak',
+        'slug' => 'molino2',
         'cuenta' => 'true',
         'telefono' => '12345678'
       ]);
 
       App\Cuenta::create([
-        'cliente_id' => 10,
+        'cliente_id' => 11,
         'codigo_cuenta' => '0000000000000011',
-        'slug' => '10',
+        'slug' => '11',
         'saldo' => 10000000,
         'fecha_apertura' => date('Y-m-d'),
         'fecha_cierre' => date('Y-m-d'),
