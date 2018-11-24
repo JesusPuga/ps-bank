@@ -25,9 +25,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- font -->
 <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-<!-- //font -->
-<script src="../js/jquery-1.11.1.min.js"></script>
-<script src="../js/bootstrap.js"></script>
+<script src="{{ asset('js/jquery-1.11.1.min.js')}}"></script>
+<script src="{{ asset('js/bootstrap.js')}}"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){
@@ -65,10 +64,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a class="active" href="index.html">Inicio</a></li>
-									<li><a href="about.html">Sobre nosotors</a></li>
-									<li><a href="signin.html">Crear cuenta</a></li>
-									<li><a href="login.html">Inicio de sesión</a></li>
+									<li><a class="active" href="inicio">Inicio</a></li>
+									<li><a href="about">Sobre nosotors</a></li>
+									@if (Auth::check())
+										<li><a href="servicios">Depósitos/Retiros</a></li>
+										<li><a href="pagos">pagos</a></li>
+										@if (Auth::user()->isAdmin())
+											<li><a href="clientes">Catálogo de clientes</a></li>
+										@endif
+								  @else
+										<li><a href="signin">Crear cuenta</a></li>
+										<li><a href="login">Inicio de sesión</a></li>
+									@endif
 								</ul>
 							</div>
 						</nav>

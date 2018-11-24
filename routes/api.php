@@ -17,10 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/payment',function(){
-     return response()->json([
-                'status' => 'success',
-                'ref_code' => '123456'
-            ]);
+Route::post('/payment', 'PublicController@makePayment');
+Route::get('/usuarioMovimientos', 'PublicController@usuarioMovimientos');
 
-});
+//Admin
+Route::get('/getClientes', 'PublicController@getClientes');
