@@ -37,7 +37,7 @@ class PublicController extends Controller
 
         if($user->isAdmin()){
           $movimientos = Movimiento::select('id','monto','descripcion','fecha')
-                                   ->where([['cuenta_id',"=",$cuenta->codigo_cuenta],['local',"=",False]])->get()->toArray();
+                                   ->where('local',"=",False)->get()->toArray();
         }else{
           $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cuenta_id',$cuenta->codigo_cuenta)->get()->toArray();
 
