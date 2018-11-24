@@ -20,21 +20,23 @@ class PublicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getClientes()
+    public function getClientes(Request $request)
     {
-        $userId = Auth::id();
-        $clientes = User::select('id','name','email')->where('id','<>',$userId)->get()->toArray();
+        $data = Input::all();
+        $clientes = User::select('id','name','email')->where('id','<>',$data['id'])->get()->toArray();
 
         return $clientes;//new MovimientosResource($movimientos);
     }
 
-    public function usuarioMovimientos()
+    public function movimientos(Request $request)
     {
-        $userId = Auth::id();
-        $cuentaId = Cuenta::where("cliente_id","=",$userId)->firstOrFail();;
-        $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cuenta_id',$cuentaId)->get()->toArray();
+        $data = Input::all();
+        $cuenta = Cuenta::where("cliente_id","=",$data['id'])->firstOrFail();;
+        $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cuenta_id',$cuenta->codigo_cuenta)->get()->toArray();
+        $newMovimientos['movimientos'] =$movimientos;
+        $newMovimientos['saldo'] = $cuenta->saldo;
 
-        return $movimientos;//new MovimientosResource($movimientos);
+        return $newMovimientos;//new MovimientosResource($movimientos);
      }
 
      private function savePayment($data,$isLocal){

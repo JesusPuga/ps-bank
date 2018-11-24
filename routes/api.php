@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/example', 'PublicController@example');
 Route::post('/getExisitsCuentaId', 'PublicController@getExisitsCuentaId');
 Route::post('/payment', 'PublicController@makePayment');
-Route::get('/usuarioMovimientos', 'PublicController@usuarioMovimientos');
+Route::post('/movimientos', 'PublicController@movimientos');
 
 //Admin
-Route::get('/getClientes', 'PublicController@getClientes');
+Route::post('/getClientes', 'PublicController@getClientes');
