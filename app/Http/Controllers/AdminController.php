@@ -26,9 +26,8 @@ class AdminController extends Controller
    public function clientes()
    {
        $userId = Auth::id();
-       $clientes = User::select('id','name','email')->where('id','<>',$userId)->get()->toArray();
 
-       return  view('web.clientes',compact($clientes));
+       return  view('web.clientes')->with('userId', $userId);
    }
 
 }

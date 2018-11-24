@@ -1,5 +1,7 @@
 $.ajax({
    url: "/api/getClientes",
+   data:{"id": id},
+   type: 'POST',
    success: function(response){
      var newData = [];
 
