@@ -15,12 +15,12 @@ class CreateMovimientosTable extends Migration
     {
         Schema::create('movimientos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('slug',128)->unique();
-            $table->string('cuenta_id')->unique();
-            $table->string('cuenta_destino_id')->unique();
+            $table->string('cuenta_id');
+            $table->string('cuenta_destino_id');
             $table->float('monto');
             $table->string('descripcion');
             $table->dateTime('fecha');
+            $table->boolean('local');
             $table->string('referencia',128);
             $table->boolean('status');
             $table->timestamps();
