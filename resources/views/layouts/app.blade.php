@@ -27,6 +27,8 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <script src="{{ asset('js/bootstrap.js')}}" defer ></script>
     <!--// bootstrap-css --><!-- //font -->
+    
+
 </head>
 <body>
     <div id="app">

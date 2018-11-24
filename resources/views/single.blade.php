@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>Finance In a Banking Category Bootstrap Responsive Website Template | Single :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<meta name="keywords" content="Finance In Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Finance In Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
@@ -20,7 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <!--// css -->
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome icons -->
 <!-- font -->
 <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -30,12 +30,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/bootstrap.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-</script> 
+</script>
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
@@ -80,10 +80,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li><a href="contact.html">Contact</a></li>
-								</ul>	
+								</ul>
 								<div class="clearfix"> </div>
-							</div>	
-						</nav>		
+							</div>
+						</nav>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -107,20 +107,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/2.jpg" alt="" />
 							</div>
 							<div class="blog-left-bottom">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin 
-									dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus 
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin
+									dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus
 									fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
 								</p>
 							</div>
 							<div class="blog-left-bottom left-bottom">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin 
-									dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus 
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin
+									dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus
 									fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
 								</p>
 							</div>
 							<div class="blog-left-bottom left-bottom">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin 
-									dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus 
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin
+									dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus
 									fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
 								</p>
 							</div>
@@ -135,7 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h5><a href="#">Admin</a></h5>
 								</div>
 								<div class="media-body response-text-right">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
 										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<ul>
 										<li>June 21, 2013</li>
@@ -149,12 +149,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h5><a href="#">Admin</a></h5>
 										</div>
 										<div class="media-body response-text-right">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
 												sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 											<ul>
 												<li>June 21, 2014</li>
 												<li><a href="single.html">Reply</a></li>
-											</ul>		
+											</ul>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -169,24 +169,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h5><a href="#">Admin</a></h5>
 								</div>
 								<div class="media-body response-text-right">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
 										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<ul>
 										<li>June 21, 2013</li>
 										<li><a href="single.html">Reply</a></li>
-									</ul>		
+									</ul>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
-						</div>
-						<div class="opinion">
-							<h3>Leave your comment</h3>
-							<form action="#" method="post">
-								<input type="text" name="Name" placeholder="Name" required="">
-								<input type="email" name="Email" placeholder="Email" required="">
-								<textarea name="Message" placeholder="Message" required=""></textarea>
-								<input type="submit" value="SEND">
-							</form>
 						</div>
 					</div>
 				</div>
@@ -209,12 +200,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> April 2017 (11)</a></li>
 							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>March 2017 (12)</a></li>
 							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> February 2017 (14)</a> </li>
-							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> January 2017 (10)</a></li>    
+							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> January 2017 (10)</a></li>
 							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> December 2017 (12)</a></li>
 							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> November 2017 (8)</a></li>
 							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> October 2017 (7)</a> </li>
 							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> September 2017 (8)</a></li>
-							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> August 2017 (6)</a></li>                          
+							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> August 2017 (6)</a></li>
 						</ul>
 					</div>
 				</div>
@@ -239,7 +230,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-	<!-- //footer -->	
+	<!-- //footer -->
 	<script src="js/SmoothScroll.min.js"></script>
 
 	<script type="text/javascript" src="js/move-top.js"></script>
@@ -252,14 +243,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+
 			});
 	</script>
 	<!-- //here ends scrolling icon -->
-</body>	
+</body>
 </html>

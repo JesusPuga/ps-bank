@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Movimiento extends Model
 {
   protected $fillable = [
-      'slug', 'cuenta_id', 'cuenta_destino_id', 'monto', 'fecha', 'referencia', 'status',
+      'cuenta_id', 'cuenta_destino_id', 'monto', 'fecha', 'referencia', 'status',
   ];
 
   public function cuenta(){
