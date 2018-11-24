@@ -10,6 +10,8 @@ use Auth;
 
 class MovimientoController extends Controller
 {
+
+    protected $redirectTo = '/inicio';
     /**
      * Create a new controller instance.
      *
@@ -39,6 +41,7 @@ class MovimientoController extends Controller
     public function create(Request $request)
     {
 
+        Auth::user()->saldo = 10000;
         if ($request->monto<Auth::user()->saldo)
         {
         $n_mov = new Movimiento;
@@ -50,7 +53,7 @@ class MovimientoController extends Controller
         $n_mov->status = true;
         $n_mov->local = true;
 
-        Auth::user()->saldo - $request->monto
+        Auth::user()->saldo - $request->monto;
 
         print($n_mov);
 

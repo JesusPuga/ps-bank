@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/inicio';
 
     /**
      * Create a new controller instance.
@@ -68,7 +68,9 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'type' => User::DEFAULT_TYPE,   
-            'cuenta' => rand ( 1000000000000000 , 9999999999999999 );     
+            'saldo' => 10000,
+            'cuenta' => rand ( 1000000000000000 , 9999999999999999 )
+
         ]);
     }
 }
