@@ -103,8 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <h6>Concepto: </h6>
 <div class="input-group mb-3">
-
-  <div class="input-group-prepend">
+<div class="input-group-prepend">
   
     <span class="input-group-text" id="basic-addon1">!</span>
   </div>
@@ -133,6 +132,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       
     
   </main>
+@section('content')
+  <div class="container">
+    <h1 id="saldo">Saldo: </h1>
+    <div class="col-md-12" align="center">
+      <h1>Lista de movimientos</h1>
+        <table id="movimientos" class="display" style="width:100%">
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Monto</th>
+                  <th>Descripción</th>
+                  <th>Fecha</th>
+              </tr>
+          </thead>
+          <tfoot>
+						<tr>
+              <th>Id</th>
+              <th>Monto</th>
+              <th>Descripción</th>
+              <th>Fecha</th>
+						</tr>
+					</tfoot>
+        </table>
+    </div>
+  </div>
+  <script>
+  const id = {{$userId}}
+  </script>
   <script src="{{ asset('js/movimientosTable.js')}}" defer></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
