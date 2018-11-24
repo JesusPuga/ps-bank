@@ -27,8 +27,8 @@ class MovimientoController extends Controller
      */
     public function index()
     {
-        $movimientos = Movimiento::orderBy('id','DESC')->paginate(3);
-        return view('web.movimientos', compact('movimientos'));
+        $userId = Auth::id();
+        return view('web.movimientos')->with('userId', $userId);
     }
 
     /**

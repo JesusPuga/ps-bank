@@ -19,11 +19,13 @@ Auth::routes();
 //Route::get('inicio', 'PublicController@initial')->name('initial');
 Route::get('home', 'HomeController@index')->name('movimientos');
 Route::get('movimientos', 'Web\MovimientoController@index')->name('movimientos');
-Route::get('usuarioMovsimientos', 'Web\MovimientoController@usuarioMovimientos')->name('usuarioMovimientos');
 
 //Públics
 Route::get('about', function(){
   return View('about');
+});
+Route::get('single', function(){
+  return View('single');
 });
 Route::get('inicio', function(){
   return View('index');

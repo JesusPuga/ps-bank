@@ -24,8 +24,8 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.4/b-html5-1.5.4/datatables.min.js" defer></script>
     <!-- Scripts -->
     <!-- bootstrap-css -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="{{ asset('js/bootstrap.js')}}" defer ></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     <!--// bootstrap-css --><!-- //font -->
 </head>
 <body>
