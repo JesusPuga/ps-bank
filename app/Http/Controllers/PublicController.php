@@ -93,14 +93,12 @@ class PublicController extends Controller
        $newData["monto"] = $data["monto"];
        $newData["detalle"] = $data["detalle"];
        //example of post with reqres(page to make fake REST operations)
-       $client = new Client(['base_uri' => 'https://reqres.in/api/users', 'timeout'  => 2.0]);
-       $response = $client->request('GET', 'users',['query' => ['name' => "paul rudd",
-                                                                 'movies'=> ["I Love You Man", "Role Models"]]]);
+       $client = new Client(['base_uri' => 'https://bancagzz.herokuapp.com/api', 'timeout'  => 2.0]);
+       $response = $client->request('GET', 'getExisitsCuentaId',$newData);
        $body = $response->getBody();
-       return $body;
        $status = True;
 
-       if($status == "no"){
+       if($body == "no"){
          $status = False;
        }
 
