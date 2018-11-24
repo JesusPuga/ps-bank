@@ -2,8 +2,7 @@
 
 @section('content')
   <div class="container">
-    <h1 id="saldo">Saldo: </h1>
-    <div class="col-md-12" align="center">
+    <div class="col-md-8 col-md-offset-2">
       <h1>Lista de movimientos</h1>
         <table id="movimientos" class="display" style="width:100%">
           <thead>
@@ -25,8 +24,5 @@
         </table>
     </div>
   </div>
-  <script>
-  const id = {{$userId}}
-  </script>
   <script src="{{ asset('js/movimientosTable.js')}}" defer></script>
 @endsection

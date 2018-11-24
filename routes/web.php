@@ -12,20 +12,15 @@
 */
 
 Route::redirect('/', 'inicio');
-
 Auth::routes();
-
 //Web clientes
 //Route::get('inicio', 'PublicController@initial')->name('initial');
 Route::get('home', 'HomeController@index')->name('movimientos');
 Route::get('movimientos', 'Web\MovimientoController@index')->name('movimientos');
-
+Route::get('usuarioMovsimientos', 'Web\MovimientoController@usuarioMovimientos')->name('usuarioMovimientos');
 //Públics
 Route::get('about', function(){
   return View('about');
-});
-Route::get('single', function(){
-  return View('single');
 });
 Route::get('inicio', function(){
   return View('index');
@@ -37,15 +32,13 @@ Route::get('logint', function(){
   return View('logint');
 });
 Route::get('servicios', function(){
-  return View('about');
+  return View('web/movimientos');
 });
 Route::get('pagos', function(){
   return View('about');
 });
-
+Route::post('/','Web\MovimientoController@create');
 //Asdmin
 Route::get('clientes', 'AdminController@clientes')->middleware('is_admin');
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('index');
