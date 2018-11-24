@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Movimientos as MovimientosResource;
 use Auth;
+use Mail;
 
 class MovimientoController extends Controller
 {
@@ -40,7 +41,6 @@ class MovimientoController extends Controller
      */
     public function create(Request $request)
     {
-
         Auth::user()->saldo = 10000;
         if ($request->monto<Auth::user()->saldo)
         {
@@ -55,7 +55,18 @@ class MovimientoController extends Controller
 
         Auth::user()->saldo - $request->monto;
 
-        print($n_mov);
+        $to_name = Auth::user()->name;
+        $to_email = Auth::user()->email;
+        $data = array('name'=>$to_name, "body" => "Has realizado un deposito exitosamente.");
+    
+        Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) {
+        $message->to($to_email, $to_name)
+            ->subject('Movimientos en tu cuenta de SP BANK');
+        $message->from('sonny.gonzalez.roxtarsoft@gmail.com','SP BANK');
+        });
+
+        print ('Mensje enviado');
+
 
         }
     }
