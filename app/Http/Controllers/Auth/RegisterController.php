@@ -67,7 +67,8 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'type' => User::DEFAULT_TYPE,        
+            'type' => User::DEFAULT_TYPE,   
+            'cuenta' => rand ( 1000000000000000 , 9999999999999999 );     
         ]);
     }
 }

@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->string('file',128)->nullable();
             $table->rememberToken();
             $table->timestamps();
+            $table->float('saldo');
+            $table->string('cuenta',16)->unique();
         });
     }
 

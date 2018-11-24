@@ -72,8 +72,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										@if (Auth::user()->isAdmin())
 											<li><a href="clientes">Catálogo de clientes</a></li>
 										@endif
-								  @else
-										<li><a href="signin">Crear cuenta</a></li>
+								  	@else
+										<li><a href="register">Crear cuenta</a></li>
 										<li><a href="login">Inicio de sesión</a></li>
 									@endif
 								</ul>

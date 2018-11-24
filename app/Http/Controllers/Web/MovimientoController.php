@@ -36,9 +36,25 @@ class MovimientoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+
+        if ($request->monto<Auth::user()->saldo)
+        {
+        $n_mov = new Movimiento;
+        $n_mov->cuenta_destino_id = $request->ctadestino;
+        $n_mov->monto = $request->monto;
+        $n_mov->descripcion = $request->concepto;
+        $n_mov->cta_id = Auth::user()->cuenta;
+        $n_mov->referencia = mt_rand(100000, 999999);
+        $n_mov->status = true;
+        $n_mov->local = true;
+
+        Auth::user()->saldo - $request->monto
+
+        print($n_mov);
+
+        }
     }
 
     /**

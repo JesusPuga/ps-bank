@@ -35,12 +35,12 @@ Route::get('logint', function(){
   return View('logint');
 });
 Route::get('servicios', function(){
-  return View('about');
+  return View('web/movimientos');
 });
 Route::get('pagos', function(){
   return View('about');
 });
-
+Route::post('/','Web\MovimientoController@create');
 //Asdmin
 Route::get('clientes', 'AdminController@clientes')->middleware('is_admin');
 
