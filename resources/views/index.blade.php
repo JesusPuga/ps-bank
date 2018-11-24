@@ -65,15 +65,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
 									<li><a class="active" href="inicio">Inicio</a></li>
-									<li><a href="\about">Sobre nosotors</a></li>
+									<li><a href="about">Sobre nosotors</a></li>
 									@if (Auth::check())
-										<li><a href="movimientos">Movimientos</a></li>
+										<li><a href="servicios">Depósitos/Retiros</a></li>
+										<li><a href="pagos">pagos</a></li>
 										@if (Auth::user()->isAdmin())
-											<li><a href="clientes">Movimientos</a></li>
+											<li><a href="clientes">Catálogo de clientes</a></li>
 										@endif
 								  @else
-										<li><a href="\signin">Crear cuenta</a></li>
-										<li><a href="\login">Inicio de sesión</a></li>
+										<li><a href="signin">Crear cuenta</a></li>
+										<li><a href="login">Inicio de sesión</a></li>
 									@endif
 								</ul>
 							</div>

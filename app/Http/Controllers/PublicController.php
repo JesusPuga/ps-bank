@@ -29,7 +29,8 @@ class PublicController extends Controller
     public function usuarioMovimientos()
     {
         $userId = Auth::id();
-        $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cuenta_id',2)->get()->toArray();
+        $cuentaId = Cuenta::where("cliente_id","=",$userId)->firstOrFail();;
+        $movimientos = Movimiento::select('id','monto','descripcion','fecha')->where('cuenta_id',$cuentaId)->get()->toArray();
 
         return $movimientos;//new MovimientosResource($movimientos);
      }
